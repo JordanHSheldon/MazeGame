@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://kp3m5wlg2jwy"]
+
+[ext_resource type="ArrayMesh" uid="uid://ct8dc4ior3hil" path="res://Assets/sprites/stairs_long_modular_center.obj" id="1_ctx7h"]
+[ext_resource type="ArrayMesh" uid="uid://cmejfta4r52v7" path="res://Assets/sprites/stairs_long_modular_left.obj" id="2_16nij"]
+[ext_resource type="ArrayMesh" uid="uid://bnh1kufmu7j7u" path="res://Assets/sprites/stairs_long_modular_right.obj" id="3_01bww"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_boauj"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ctx7h")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_boauj")
+
+[node name="LeftBorder" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.006)
+mesh = ExtResource("2_16nij")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="LeftBorder"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LeftBorder/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_boauj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_ctx7h")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D2/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_boauj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("1_ctx7h")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D3/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_boauj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 0)
+mesh = ExtResource("3_01bww")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D4/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_boauj")

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bc13qb0fhjeao"
+path="res://.godot/imported/box_large.obj-3be61619d47ce272ef65c88c28c67db7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/box_large.obj-3be61619d47ce272ef65c88c28c67db7.mesh"]
+
+source_file="res://Assets/sprites/box_large.obj"
+dest_files=["res://.godot/imported/box_large.obj-3be61619d47ce272ef65c88c28c67db7.mesh", "res://.godot/imported/box_large.obj-3be61619d47ce272ef65c88c28c67db7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

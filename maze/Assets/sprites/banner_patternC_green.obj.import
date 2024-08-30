@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dfamgfc5nepms"
+path="res://.godot/imported/banner_patternC_green.obj-0bf74b904bedc2c93539c9884f44fdbb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/banner_patternC_green.obj-0bf74b904bedc2c93539c9884f44fdbb.mesh"]
+
+source_file="res://Assets/sprites/banner_patternC_green.obj"
+dest_files=["res://.godot/imported/banner_patternC_green.obj-0bf74b904bedc2c93539c9884f44fdbb.mesh", "res://.godot/imported/banner_patternC_green.obj-0bf74b904bedc2c93539c9884f44fdbb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

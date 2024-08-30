@@ -1,0 +1,91 @@
+[gd_scene load_steps=8 format=3 uid="uid://c7pflthmxc07f"]
+
+[ext_resource type="ArrayMesh" uid="uid://dyqe58jcfiwoj" path="res://Assets/sprites/wall_doorway.obj" id="1_1jhw1"]
+[ext_resource type="ArrayMesh" uid="uid://byyxccar4dgjs" path="res://Assets/sprites/wall_doorway_scaffold_door.obj" id="2_ea8xi"]
+[ext_resource type="Script" path="res://Scripts/Door.cs" id="3_c66ob"]
+
+[sub_resource type="Animation" id="Animation_u0ki0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1islt"]
+resource_name = "animation_close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_r0lpb"]
+resource_name = "animation_open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5hahk"]
+_data = {
+"RESET": SubResource("Animation_u0ki0"),
+"animation_close": SubResource("Animation_1islt"),
+"animation_open": SubResource("Animation_r0lpb")
+}
+
+[node name="Doorway" type="Node3D"]
+
+[node name="Doorframe" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_1jhw1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Doorframe"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Doorframe/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.3)
+polygon = PackedVector2Array(2.03116, 3.85179, 1.95557, 0.0767851, 1.13765, 0.110921, 1.26921, 2.74275, 0.890399, 2.88611, -0.559795, 2.87881, -0.95421, 2.5101, -1.05793, 0.0451207, -2.03934, 0.201432, -1.86565, 3.99353, 2.0225, 3.92815)
+
+[node name="DoorHinge" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.04523, 1.38179, 0)
+
+[node name="DoorBody" type="StaticBody3D" parent="DoorHinge" node_paths=PackedStringArray("animationPlayer")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04523, -1.38179, 0)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("3_c66ob")
+animationPlayer = NodePath("../../AnimationPlayer")
+
+[node name="Door" type="MeshInstance3D" parent="DoorHinge/DoorBody"]
+mesh = ExtResource("2_ea8xi")
+skeleton = NodePath("../../..")
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="DoorHinge/DoorBody"]
+polygon = PackedVector2Array(0.660375, 2.5419, 0.097502, 2.71958, -0.690956, 2.50417, -0.755468, 0.487376, 0.816121, 0.398421, 0.721416, 2.4771)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../DoorHinge")
+libraries = {
+"": SubResource("AnimationLibrary_5hahk")
+}

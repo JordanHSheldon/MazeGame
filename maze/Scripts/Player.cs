@@ -23,7 +23,7 @@ public partial class Player : RigidBody3D
 	{
 		_player =  GetParent().GetNode<RigidBody3D>("Player");
 		twistPivot = _player.GetNode<Node3D>("TwistPivot");
-		pitchPivot = twistPivot.GetNode<Node3D>("PitchPivot");
+		pitchPivot = twistPivot.GetNode<Node3D>("PitchPivot");	
 		Input.MouseMode = Input.MouseModeEnum.Captured;
 	}
 

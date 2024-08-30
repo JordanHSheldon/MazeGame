@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ct8dc4ior3hil"
+path="res://.godot/imported/stairs_long_modular_center.obj-4d143c692ad687ebd55e34bce3f30089.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stairs_long_modular_center.obj-4d143c692ad687ebd55e34bce3f30089.mesh"]
+
+source_file="res://Assets/sprites/stairs_long_modular_center.obj"
+dest_files=["res://.godot/imported/stairs_long_modular_center.obj-4d143c692ad687ebd55e34bce3f30089.mesh", "res://.godot/imported/stairs_long_modular_center.obj-4d143c692ad687ebd55e34bce3f30089.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

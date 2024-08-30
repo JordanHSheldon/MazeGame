@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bo2w2nq7x6253"
+path="res://.godot/imported/wall_crossing.obj-b2eb383b5f9e182b7a9b89a7177ebf5d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall_crossing.obj-b2eb383b5f9e182b7a9b89a7177ebf5d.mesh"]
+
+source_file="res://Assets/sprites/wall_crossing.obj"
+dest_files=["res://.godot/imported/wall_crossing.obj-b2eb383b5f9e182b7a9b89a7177ebf5d.mesh", "res://.godot/imported/wall_crossing.obj-b2eb383b5f9e182b7a9b89a7177ebf5d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

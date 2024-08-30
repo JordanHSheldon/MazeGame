@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clbq6mjkqjc62"
+path="res://.godot/imported/torch.obj-3e1200b1be9fa9986c94e8ac02929cdd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/torch.obj-3e1200b1be9fa9986c94e8ac02929cdd.mesh"]
+
+source_file="res://Assets/sprites/torch.obj"
+dest_files=["res://.godot/imported/torch.obj-3e1200b1be9fa9986c94e8ac02929cdd.mesh", "res://.godot/imported/torch.obj-3e1200b1be9fa9986c94e8ac02929cdd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

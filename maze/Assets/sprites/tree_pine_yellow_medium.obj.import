@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b6yyg2uyi70vb"
+path="res://.godot/imported/tree_pine_yellow_medium.obj-65cbb6e478eb52799e9bce99d429be2d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tree_pine_yellow_medium.obj-65cbb6e478eb52799e9bce99d429be2d.mesh"]
+
+source_file="res://Assets/sprites/tree_pine_yellow_medium.obj"
+dest_files=["res://.godot/imported/tree_pine_yellow_medium.obj-65cbb6e478eb52799e9bce99d429be2d.mesh", "res://.godot/imported/tree_pine_yellow_medium.obj-65cbb6e478eb52799e9bce99d429be2d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

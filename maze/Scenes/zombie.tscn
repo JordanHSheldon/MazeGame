@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://q8wwu3ue765a"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_0nbnn"]
+
+[node name="Zombie" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CylinderMesh_0nbnn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dn214jonfvy8f"
+path="res://.godot/imported/floor_tile_large_rocks.obj-96a8763a72f719ffc940ae1667553d8c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor_tile_large_rocks.obj-96a8763a72f719ffc940ae1667553d8c.mesh"]
+
+source_file="res://Assets/sprites/floor_tile_large_rocks.obj"
+dest_files=["res://.godot/imported/floor_tile_large_rocks.obj-96a8763a72f719ffc940ae1667553d8c.mesh", "res://.godot/imported/floor_tile_large_rocks.obj-96a8763a72f719ffc940ae1667553d8c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

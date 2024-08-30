@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://brbg3f8a0hlb8"
+path="res://.godot/imported/floor_tile_big_spikes.obj-f61706609ea3584cbf6f43a3afe045ad.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor_tile_big_spikes.obj-f61706609ea3584cbf6f43a3afe045ad.mesh"]
+
+source_file="res://Assets/sprites/floor_tile_big_spikes.obj"
+dest_files=["res://.godot/imported/floor_tile_big_spikes.obj-f61706609ea3584cbf6f43a3afe045ad.mesh", "res://.godot/imported/floor_tile_big_spikes.obj-f61706609ea3584cbf6f43a3afe045ad.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

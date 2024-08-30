@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://by5rweqderrgs"]
+
+[ext_resource type="ArrayMesh" uid="uid://bq1t7sjfw3moq" path="res://Assets/sprites/wall_corner.obj" id="1_ixoh6"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ixoh6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="MeshInstance3D/StaticBody3D"]
+polygon = PackedVector2Array(-1.92043, 3.74356, 0.491152, 3.78965, 0.500089, 0.426181, -1.92363, 0.0323443, -1.84081, 3.64448)
+
+[node name="CollisionPolygon3D2" type="CollisionPolygon3D" parent="MeshInstance3D/StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+polygon = PackedVector2Array(-1.92043, 3.74356, 0.491152, 3.78965, 0.500089, 0.426181, -1.92363, 0.0323443, -1.84081, 3.64448)
